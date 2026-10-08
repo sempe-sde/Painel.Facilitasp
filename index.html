@@ -149,6 +149,20 @@ main{max-width:1180px; margin:0 auto; padding:20px 20px 60px;}
 .rc-parecer{margin-top:8px; padding:8px 10px; background:var(--gray-50); border-radius:6px; font-size:12px;}
 .rc-parecer b{color:var(--gray-800);}
 
+/* ---- documentos de apoio ---- */
+.docs-link{
+  display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--black);
+  background:var(--white); border:1px solid var(--gray-200); border-left:4px solid var(--red);
+  border-radius:var(--radius); padding:12px 16px; box-shadow:var(--shadow); text-align:left;
+}
+.docs-link:hover{border-color:var(--red);}
+.docs-link svg{width:22px; height:22px; flex:none; color:var(--red);}
+.docs-link .t{font-weight:700; font-size:13.5px;}
+.docs-link .d{font-size:12px; color:var(--gray-600); margin-top:2px; line-height:1.4;}
+.docs-link .go{margin-left:auto; color:var(--red); font-weight:700; font-size:12.5px; white-space:nowrap;}
+.search-docs{margin-top:22px;}
+.detail-docs{margin-top:18px;}
+
 .empty{text-align:center; padding:40px 20px; color:var(--gray-400); font-size:13.5px;}
 footer{text-align:center; padding:26px 20px 30px; color:var(--gray-400); font-size:11.5px;}
 footer img{display:block; height:44px; width:auto; margin:0 auto 10px; opacity:.9;}
@@ -189,12 +203,22 @@ footer img{display:block; height:44px; width:auto; margin:0 auto 10px; opacity:.
         </div>
       </form>
       <div id="search-msg" class="search-msg hidden"></div>
+      <a class="docs-link search-docs" href="https://drive.google.com/drive/folders/1pSnQjiaHaH8I44UrXuW-g5rH0ar4XFhl" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          <div><div class="t">Modelos e documentos de apoio</div><div class="d">Fluxograma de abertura de empresa, municípios com NFS-e ativa e com Inscrição Municipal automatizada</div></div>
+          <span class="go">Abrir &#8599;</span>
+        </a>
     </div>
   </section>
 
   <section id="view-detail" class="hidden">
     <button class="backbtn" onclick="showSearch()">&larr; Nova consulta</button>
     <div id="detail-content"></div>
+    <a class="docs-link detail-docs" href="https://drive.google.com/drive/folders/1pSnQjiaHaH8I44UrXuW-g5rH0ar4XFhl" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          <div><div class="t">Modelos e documentos de apoio</div><div class="d">Fluxograma de abertura de empresa, municípios com NFS-e ativa e com Inscrição Municipal automatizada</div></div>
+          <span class="go">Abrir &#8599;</span>
+        </a>
   </section>
 </main>
 
